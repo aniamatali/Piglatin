@@ -50,6 +50,7 @@ $(document).ready(function() {
        var letter = word.charAt(0);
       if (vowelCheck(letter) === true) {
         finalArray.push(word + "way");
+
       } else if (consonantCheck(letter) === true) {
         debugger;
         for (var i=0; i < word.length; i++) {
@@ -60,7 +61,8 @@ $(document).ready(function() {
         }
         for (var i=0; i < word.length; i++) {
           if (quCheck(letter) === true) {
-            word = word.substr(2)+"qu";
+            word = word.substr(1)+ word.split("",1);
+            word = word.substr(1)+ word.split("",1);
             letter = word.charAt(0);
           }
         }
